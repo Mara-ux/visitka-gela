@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --index: calc(1vw + 1vh);
+}
+
+@font-face {
+    font-family: Moon;
+    src: url(../fonts/MontserratAlternates-Regular.ttf);
+}
+body{
+    font-family: Moon;
+    color: white;
+}
+.header{
+    min-height: calc(var(--index)*40);
+    background-image: linear-gradient(rgba(10, 15, 21, .5), rgba(10, 15, 21, .5)), url(../img/bg.gif);
+    background-size: cover;
+    text-align: left;
+
+
+}
+
+.row{
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    font-size: calc(var(--index)*1.5);
+    h1{color: #EB18E2;}
+}
+
+.icons img{
+    height: calc(var(--index)*3);
+    margin-top: 5%;
+    transition: .3s ease-in-out;
+    border-radius: 50%;
+}
+.icons img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 30px 0px #EB18E2;
+}
+.colon2 img{
+    height: calc(var(--index)*17);
+    border-radius: 50%;
+    transition: .3s ease-in-out;
+}
+.colon2 img:hover{
+    box-shadow: 0 0 50px 0px rgba(10, 15, 21);
+    transform: scale(1.05);
+}
